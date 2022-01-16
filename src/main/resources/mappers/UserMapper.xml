@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTO Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.springdemo.dao.UserMapper">
+    <select id="selectUsers" parameterType="com.springdemo.model.UserVO" resultType="com.springdemo.model.UserVO">
+        SELECT userName, userPassword FROM USER_INFO
+    </select>
+</mapper>
